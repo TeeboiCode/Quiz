@@ -1,0 +1,38 @@
+{
+  "quizQuestions": [
+    {
+      "id": 1,
+      "question": "What is Vue.js?",
+      "options": [
+        "A backend framework",
+        "A JavaScript library",
+        "A progressive JavaScript framework",
+        "A database system"
+      ],
+      "correct": "A progressive JavaScript framework"
+    },
+    {
+      "id": 2,
+      "question": "Which command is used to create a new Vue.js project?",
+      "options": [
+        "vue create my-app",
+        "npm install vue",
+        "vue new my-app",
+        "npx create-vue my-app"
+      ],
+      "correct": "vue create my-app"
+    },
+    {
+      "id": 3,
+      "question": "What is the Vue instance method to watch for data changes?",
+      "options": ["v-watch", "watch", "v-observe", "observe"],
+      "correct": "watch"
+    },
+    {
+      "id": 4,
+      "question": "Which directive is used for two-way data binding in Vue.js?",
+      "options": ["v-model", "v-bind", "v-two-way", "v-sync"],
+      "correct": "v-model"
+    }
+  ]
+}
