@@ -51,18 +51,16 @@ export default {
     saveResult() {
       const playerName = localStorage.getItem("playerName"); // Assuming playerName is stored in local storage
       const newResult = {
-        name: playerName,
+        full_name: playerName,
         score: this.score,
         total: this.totalQuestions,
-        percentage: this.percentage,
-        time: new Date()
       };
 
       let results = JSON.parse(localStorage.getItem("quizResults")) || [];
       results.push(newResult);
       localStorage.setItem("quizResults", JSON.stringify(results));
 
-      fetch("http://localhost:3050/results", {
+      fetch("https://task.fashion-life-agency.com/get-score.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
