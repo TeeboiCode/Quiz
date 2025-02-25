@@ -2,37 +2,228 @@
   "quizQuestions": [
     {
       "id": 1,
-      "question": "What is Vue.js?",
+      "question": "What does HTML stand for?",
       "options": [
-        "A backend framework",
-        "A JavaScript library",
-        "A progressive JavaScript framework",
-        "A database system"
+        "Hyper Text Markup Language",
+        "High Text Markup Language",
+        "Hyperlinks and Text Markup Language",
+        "None of the above"
       ],
-      "correct": "A progressive JavaScript framework"
+      "correct": "Hyper Text Markup Language"
     },
     {
       "id": 2,
-      "question": "Which command is used to create a new Vue.js project?",
-      "options": [
-        "vue create my-app",
-        "npm install vue",
-        "vue new my-app",
-        "npx create-vue my-app"
-      ],
-      "correct": "vue create my-app"
+      "question": "Which tag is used to define an unordered list in HTML?",
+      "options": ["<ul>", "<ol>", "<li>", "<list>"],
+      "correct": "<ul>"
     },
     {
       "id": 3,
-      "question": "What is the Vue instance method to watch for data changes?",
-      "options": ["v-watch", "watch", "v-observe", "observe"],
-      "correct": "watch"
+      "question": "Which tag is used to display a heading in HTML?",
+      "options": ["<head>", "<h1>", "<heading>", "<title>"],
+      "correct": "<h1>"
     },
     {
       "id": 4,
-      "question": "Which directive is used for two-way data binding in Vue.js?",
-      "options": ["v-model", "v-bind", "v-two-way", "v-sync"],
-      "correct": "v-model"
+      "question": "How do you create a link in HTML?",
+      "options": [
+        "<a href='url'>Link</a>",
+        "<link href='url'>Link</link>",
+        "<url='link'>Link</url>",
+        "<hyperlink href='url'>Link</hyperlink>"
+      ],
+      "correct": "<a href='url'>Link</a>"
+    },
+    {
+      "id": 5,
+      "question": "Which HTML attribute specifies an alternative text for an image?",
+      "options": ["alt", "src", "title", "img-text"],
+      "correct": "alt"
+    },
+    {
+      "id": 6,
+      "question": "What does the <table> tag define in HTML?",
+      "options": ["A form", "A table", "A row", "A heading"],
+      "correct": "A table"
+    },
+    {
+      "id": 7,
+      "question": "Which HTML tag is used for inserting an image?",
+      "options": ["<image>", "<img>", "<src>", "<picture>"],
+      "correct": "<img>"
+    },
+    {
+      "id": 8,
+      "question": "What is the correct syntax for embedding a style sheet in HTML?",
+      "options": [
+        "<style src='styles.css'>",
+        "<link href='styles.css'>",
+        "<style>styles.css</style>",
+        "<link rel='stylesheet' href='styles.css'>"
+      ],
+      "correct": "<link rel='stylesheet' href='styles.css'>"
+    },
+    {
+      "id": 9,
+      "question": "Which element is used to define a paragraph in HTML?",
+      "options": ["<p>", "<h1>", "<div>", "<span>"],
+      "correct": "<p>"
+    },
+    {
+      "id": 10,
+      "question": "Which tag is used to define a form in HTML?",
+      "options": ["<form>", "<input>", "<button>", "<action>"],
+      "correct": "<form>"
+    },
+    {
+      "id": 11,
+      "question": "What is the purpose of the <meta> tag in HTML?",
+      "options": [
+        "To display text",
+        "To specify metadata",
+        "To create navigation links",
+        "To define a list"
+      ],
+      "correct": "To specify metadata"
+    },
+    {
+      "id": 12,
+      "question": "What does the <iframe> tag do?",
+      "options": [
+        "Defines a link",
+        "Defines an inline frame",
+        "Defines an image",
+        "Defines a table"
+      ],
+      "correct": "Defines an inline frame"
+    },
+    {
+      "id": 13,
+      "question": "Which tag is used to define a dropdown menu in HTML?",
+      "options": ["<select>", "<dropdown>", "<option>", "<menu>"],
+      "correct": "<select>"
+    },
+    {
+      "id": 14,
+      "question": "What is the default value of the 'display' property in CSS?",
+      "options": ["inline", "block", "none", "inline-block"],
+      "correct": "block"
+    },
+    {
+      "id": 15,
+      "question": "What is the correct HTML tag to define an input field?",
+      "options": ["<input>", "<textfield>", "<textbox>", "<field>"],
+      "correct": "<input>"
+    },
+    {
+      "id": 16,
+      "question": "What tag is used to define a container for metadata in an HTML document?",
+      "options": ["<header>", "<footer>", "<head>", "<section>"],
+      "correct": "<head>"
+    },
+    {
+      "id": 17,
+      "question": "Which tag is used to define an ordered list in HTML?",
+      "options": ["<ul>", "<ol>", "<li>", "<list>"],
+      "correct": "<ol>"
+    },
+    {
+      "id": 18,
+      "question": "What does the <br> tag do?",
+      "options": [
+        "Breaks a line",
+        "Makes a paragraph",
+        "Defines a border",
+        "Bold text"
+      ],
+      "correct": "Breaks a line"
+    },
+    {
+      "id": 19,
+      "question": "What tag is used to define a division or section in an HTML document?",
+      "options": ["<section>", "<div>", "<article>", "<header>"],
+      "correct": "<div>"
+    },
+    {
+      "id": 20,
+      "question": "What attribute specifies the destination of a link in HTML?",
+      "options": ["href", "src", "alt", "link"],
+      "correct": "href"
+    },
+    {
+      "id": 21,
+      "question": "Which tag is used to define the title of an HTML document?",
+      "options": ["<head>", "<title>", "<meta>", "<header>"],
+      "correct": "<title>"
+    },
+    {
+      "id": 22,
+      "question": "What does the <audio> tag define?",
+      "options": [
+        "A video file",
+        "An audio file",
+        "A music file",
+        "A voice recording"
+      ],
+      "correct": "An audio file"
+    },
+    {
+      "id": 23,
+      "question": "Which HTML attribute is used to specify the width of an image?",
+      "options": ["height", "src", "width", "alt"],
+      "correct": "width"
+    },
+    {
+      "id": 24,
+      "question": "How do you add a comment in HTML?",
+      "options": [
+        "// Comment",
+        "// This is a comment",
+        "<!-- Comment -->",
+        "/* Comment */"
+      ],
+      "correct": "<!-- Comment -->"
+    },
+    {
+      "id": 25,
+      "question": "Which HTML element is used to define a navigation section?",
+      "options": ["<nav>", "<menu>", "<links>", "<navigation>"],
+      "correct": "<nav>"
+    },
+    {
+      "id": 26,
+      "question": "Which tag is used to define a hyperlink that opens in a new tab?",
+      "options": [
+        "<a target='_blank'>",
+        "<a href='url' target='_new'>",
+        "<a href='url' target='_blank'>",
+        "<link target='_new'>"
+      ],
+      "correct": "<a href='url' target='_blank'>"
+    },
+    {
+      "id": 27,
+      "question": "Which tag is used to define a script in HTML?",
+      "options": ["<js>", "<script>", "<javascript>", "<code>"],
+      "correct": "<script>"
+    },
+    {
+      "id": 28,
+      "question": "Which tag is used to define a block of text that is preformatted?",
+      "options": ["<pre>", "<code>", "<block>", "<p>"],
+      "correct": "<pre>"
+    },
+    {
+      "id": 29,
+      "question": "Which tag is used to define a table row in HTML?",
+      "options": ["<row>", "<tr>", "<th>", "<td>"],
+      "correct": "<tr>"
+    },
+    {
+      "id": 30,
+      "question": "Which HTML attribute is used to specify the character encoding for a document?",
+      "options": ["charset", "encoding", "meta", "content-type"],
+      "correct": "charset"
     }
   ]
 }

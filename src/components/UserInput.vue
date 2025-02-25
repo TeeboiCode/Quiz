@@ -44,13 +44,18 @@ export default {
         localStorage.setItem("playerName", this.playerName);
 
         // Prepare data to send to the server
-        const userData = {
-          name: this.playerName,
-          time: new Date().toLocaleTimeString(), // Save the current time
-        };
+        // const userData = {
+        //   full_name: this.playerName,
+        //   // time: new Date().toLocaleTimeString(), // Save the current time
+        // };
 
         // Save to the server
-        await axios.post("http://localhost:3050/users", userData);
+        await axios.post(
+          "https://task.fashion-life-agency.com/create-quiz.php",
+          {
+            full_name: this.playerName,
+          }
+        );
 
         // Show success message with custom styling
         await Swal.fire({
