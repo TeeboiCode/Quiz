@@ -10,7 +10,10 @@
           placeholder="Your Full Name"
           required
         />
-        <button type="submit">Submit</button>
+        <button type="submit" :disabled="isLoading">
+          <span v-if="isLoading" class="spinner"></span>
+          <span v-else>Submit</span>
+        </button>
       </form>
     </div>
   </div>
@@ -25,6 +28,7 @@ export default {
   data() {
     return {
       playerName: "",
+      isLoading: false,
     };
   },
   // mounted() {
@@ -39,15 +43,10 @@ export default {
   methods: {
     async submitName(e) {
       e.preventDefault();
+      this.isLoading = true;
       try {
         // Save to localStorage
         localStorage.setItem("playerName", this.playerName);
-
-        // Prepare data to send to the server
-        // const userData = {
-        //   full_name: this.playerName,
-        //   // time: new Date().toLocaleTimeString(), // Save the current time
-        // };
 
         // Save to the server
         await axios.post(
@@ -91,6 +90,8 @@ export default {
           },
         });
         console.error("Error saving name:", error);
+      } finally {
+        this.isLoading = false;
       }
     },
   },
@@ -233,5 +234,25 @@ export default {
 :global(.swal-button) {
   font-family: "Arial", sans-serif;
   font-weight: 500 !important;
+}
+
+.spinner {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 </style>
