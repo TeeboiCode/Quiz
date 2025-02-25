@@ -14,13 +14,23 @@
     {
       "id": 2,
       "question": "Which tag is used to define an unordered list in HTML?",
-      "options": ["<ul>", "<ol>", "<li>", "<list>"],
+      "options": [
+        "<ul>",
+        "<ol>",
+        "<li>",
+        "<list>"
+      ],
       "correct": "<ul>"
     },
     {
       "id": 3,
       "question": "Which tag is used to display a heading in HTML?",
-      "options": ["<head>", "<h1>", "<heading>", "<title>"],
+      "options": [
+        "<head>",
+        "<h1>",
+        "<heading>",
+        "<title>"
+      ],
       "correct": "<h1>"
     },
     {
@@ -37,19 +47,34 @@
     {
       "id": 5,
       "question": "Which HTML attribute specifies an alternative text for an image?",
-      "options": ["alt", "src", "title", "img-text"],
+      "options": [
+        "alt",
+        "src",
+        "title",
+        "img-text"
+      ],
       "correct": "alt"
     },
     {
       "id": 6,
       "question": "What does the <table> tag define in HTML?",
-      "options": ["A form", "A table", "A row", "A heading"],
+      "options": [
+        "A form",
+        "A table",
+        "A row",
+        "A heading"
+      ],
       "correct": "A table"
     },
     {
       "id": 7,
       "question": "Which HTML tag is used for inserting an image?",
-      "options": ["<image>", "<img>", "<src>", "<picture>"],
+      "options": [
+        "<image>",
+        "<img>",
+        "<src>",
+        "<picture>"
+      ],
       "correct": "<img>"
     },
     {
@@ -66,13 +91,23 @@
     {
       "id": 9,
       "question": "Which element is used to define a paragraph in HTML?",
-      "options": ["<p>", "<h1>", "<div>", "<span>"],
+      "options": [
+        "<p>",
+        "<h1>",
+        "<div>",
+        "<span>"
+      ],
       "correct": "<p>"
     },
     {
       "id": 10,
       "question": "Which tag is used to define a form in HTML?",
-      "options": ["<form>", "<input>", "<button>", "<action>"],
+      "options": [
+        "<form>",
+        "<input>",
+        "<button>",
+        "<action>"
+      ],
       "correct": "<form>"
     },
     {
@@ -100,31 +135,56 @@
     {
       "id": 13,
       "question": "Which tag is used to define a dropdown menu in HTML?",
-      "options": ["<select>", "<dropdown>", "<option>", "<menu>"],
+      "options": [
+        "<select>",
+        "<dropdown>",
+        "<option>",
+        "<menu>"
+      ],
       "correct": "<select>"
     },
     {
       "id": 14,
       "question": "What is the default value of the 'display' property in CSS?",
-      "options": ["inline", "block", "none", "inline-block"],
+      "options": [
+        "inline",
+        "block",
+        "none",
+        "inline-block"
+      ],
       "correct": "block"
     },
     {
       "id": 15,
       "question": "What is the correct HTML tag to define an input field?",
-      "options": ["<input>", "<textfield>", "<textbox>", "<field>"],
+      "options": [
+        "<input>",
+        "<textfield>",
+        "<textbox>",
+        "<field>"
+      ],
       "correct": "<input>"
     },
     {
       "id": 16,
       "question": "What tag is used to define a container for metadata in an HTML document?",
-      "options": ["<header>", "<footer>", "<head>", "<section>"],
+      "options": [
+        "<header>",
+        "<footer>",
+        "<head>",
+        "<section>"
+      ],
       "correct": "<head>"
     },
     {
       "id": 17,
       "question": "Which tag is used to define an ordered list in HTML?",
-      "options": ["<ul>", "<ol>", "<li>", "<list>"],
+      "options": [
+        "<ul>",
+        "<ol>",
+        "<li>",
+        "<list>"
+      ],
       "correct": "<ol>"
     },
     {
@@ -141,19 +201,34 @@
     {
       "id": 19,
       "question": "What tag is used to define a division or section in an HTML document?",
-      "options": ["<section>", "<div>", "<article>", "<header>"],
+      "options": [
+        "<section>",
+        "<div>",
+        "<article>",
+        "<header>"
+      ],
       "correct": "<div>"
     },
     {
       "id": 20,
       "question": "What attribute specifies the destination of a link in HTML?",
-      "options": ["href", "src", "alt", "link"],
+      "options": [
+        "href",
+        "src",
+        "alt",
+        "link"
+      ],
       "correct": "href"
     },
     {
       "id": 21,
       "question": "Which tag is used to define the title of an HTML document?",
-      "options": ["<head>", "<title>", "<meta>", "<header>"],
+      "options": [
+        "<head>",
+        "<title>",
+        "<meta>",
+        "<header>"
+      ],
       "correct": "<title>"
     },
     {
@@ -170,7 +245,12 @@
     {
       "id": 23,
       "question": "Which HTML attribute is used to specify the width of an image?",
-      "options": ["height", "src", "width", "alt"],
+      "options": [
+        "height",
+        "src",
+        "width",
+        "alt"
+      ],
       "correct": "width"
     },
     {
@@ -187,7 +267,12 @@
     {
       "id": 25,
       "question": "Which HTML element is used to define a navigation section?",
-      "options": ["<nav>", "<menu>", "<links>", "<navigation>"],
+      "options": [
+        "<nav>",
+        "<menu>",
+        "<links>",
+        "<navigation>"
+      ],
       "correct": "<nav>"
     },
     {
@@ -204,25 +289,45 @@
     {
       "id": 27,
       "question": "Which tag is used to define a script in HTML?",
-      "options": ["<js>", "<script>", "<javascript>", "<code>"],
+      "options": [
+        "<js>",
+        "<script>",
+        "<javascript>",
+        "<code>"
+      ],
       "correct": "<script>"
     },
     {
       "id": 28,
       "question": "Which tag is used to define a block of text that is preformatted?",
-      "options": ["<pre>", "<code>", "<block>", "<p>"],
+      "options": [
+        "<pre>",
+        "<code>",
+        "<block>",
+        "<p>"
+      ],
       "correct": "<pre>"
     },
     {
       "id": 29,
       "question": "Which tag is used to define a table row in HTML?",
-      "options": ["<row>", "<tr>", "<th>", "<td>"],
+      "options": [
+        "<row>",
+        "<tr>",
+        "<th>",
+        "<td>"
+      ],
       "correct": "<tr>"
     },
     {
       "id": 30,
       "question": "Which HTML attribute is used to specify the character encoding for a document?",
-      "options": ["charset", "encoding", "meta", "content-type"],
+      "options": [
+        "charset",
+        "encoding",
+        "meta",
+        "content-type"
+      ],
       "correct": "charset"
     }
   ]
