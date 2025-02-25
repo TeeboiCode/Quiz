@@ -33,12 +33,14 @@
               :class="{ 'animate-left': isAnimating }"
             >
               <td v-if="!showResults">{{ index + 1 }}</td>
-              <td>{{ player.name }}</td>
-              <td v-if="!showResults">{{ player.time }}</td>
+              <td>{{ player.full_name }}</td>
+              <td v-if="!showResults">
+                {{ formatTimeTime(player.created_at) }}
+              </td>
               <td v-if="showResults">{{ player.score }}</td>
               <td v-if="showResults">{{ player.percentage }}%</td>
-              <td v-if="showResults">{{ formatDate(player.time) }}</td>
-              <td v-if="showResults">{{ formatTime(player.time) }}</td>
+              <td v-if="showResults">{{ formatDate(player.created_at) }}</td>
+              <td v-if="showResults">{{ formatTime(player.created_at) }}</td>
             </tr>
           </tbody>
         </table>
@@ -57,49 +59,58 @@ export default {
   name: "ApiRegisteredPlayersVue",
   data() {
     return {
-      players: [], // Array to hold the fetched player data
-      quizResults: [], // Array to hold the fetched quiz results
-      showResults: false, // Flag to toggle between players and quiz results
-      isAnimating: false, // Flag to trigger animation
+      players: [],
+      quizResults: [],
+      showResults: false,
+      isAnimating: false,
     };
   },
   mounted() {
-    this.fetchPlayers(); // Fetch players when the component is mounted
+    this.fetchPlayers();
   },
   methods: {
     async fetchPlayers() {
       try {
-        const response = await axios.get("http://localhost:3050/users");
-        this.players = response.data; // Store the fetched data in the players array
+        const response = await axios.get(
+          "https://task.fashion-life-agency.com/create-quiz.php"
+        );
+        this.players = response.data.data;
       } catch (error) {
         console.error("Error fetching players:", error);
       }
     },
     async fetchQuizResults() {
       try {
-        const response = await axios.get("http://localhost:3050/results");
-        this.quizResults = response.data; // Store the fetched quiz results
+        const response = await axios.get(
+          "https://task.fashion-life-agency.com/get-score.php"
+        );
+        this.quizResults = response.data.data;
+        console.log(this.quizResults);
       } catch (error) {
         console.error("Error fetching quiz results:", error);
       }
     },
     toggleResults() {
-      this.isAnimating = true; // Start animation
+      this.isAnimating = true;
       setTimeout(() => {
-        this.showResults = !this.showResults; // Toggle results
+        this.showResults = !this.showResults;
         if (this.showResults) {
-          this.fetchQuizResults(); // Fetch quiz results if showing them
+          this.fetchQuizResults();
         }
-        this.isAnimating = false; // End animation
-      }, 300); // Duration of the animation
+        this.isAnimating = false;
+      }, 300);
     },
     formatDate(dateString) {
       const date = new Date(dateString);
-      return date.toLocaleDateString(); // Format to local date and time
+      return date.toLocaleDateString();
     },
     formatTime(timeString) {
       const date = new Date(timeString);
-      return date.toLocaleTimeString(); // Format to local date and time
+      return date.toLocaleTimeString();
+    },
+    formatTimeTime(timetimeString) {
+      const date = new Date(timetimeString);
+      return date.toLocaleTimeString();
     },
   },
 };

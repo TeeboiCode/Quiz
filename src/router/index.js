@@ -3,7 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import StartQuiz from "../components/StartQuiz.vue";
 import QuizCard from "../components/QuizCard.vue";
 import UserInput from "../components/UserInput.vue";
-import ApiRegisteredPlayersVue from "../components/API Display Components/Api-Registered-Players.vue"
+import ApiRegisteredPlayersVue from "../components/API Display Components/Api-Registered-Players.vue";
 
 const routes = [
   {
